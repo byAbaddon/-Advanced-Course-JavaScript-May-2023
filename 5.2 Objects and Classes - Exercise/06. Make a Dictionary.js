@@ -5,8 +5,7 @@ arr => {
       return acc
    }, {})
 
-   Object.keys(obj).sort()
-      .forEach(el => console.log(`Term: ${el} => Definition: ${obj[el]}`))
+   Object.keys(obj).sort().forEach(el => console.log(`Term: ${el} => Definition: ${obj[el]}`))
 }
 
 //---------------------------------------------(2)-----------------------------------
