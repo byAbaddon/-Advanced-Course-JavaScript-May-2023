@@ -5,7 +5,7 @@ arr => {
       return acc
    }, {})
 
-   Object.keys(obj).sort((a, b) => a.localeCompare(b))
+   Object.keys(obj).sort()
       .forEach(el => console.log(`Term: ${el} => Definition: ${obj[el]}`))
 }
 
