@@ -17,7 +17,7 @@ function wordOccurrences(arg, obj={}) {
     if(!obj[word]) obj[word] = 0
     obj[word] += 1
   }
-
+  
   Object.entries(obj).sort((a, b) => b[1] - a[1])
     .forEach(x => console.log(x[0] + ' -> ' + x[1] + ' times'))
 }
