@@ -14,7 +14,7 @@ function wordOccurrences(arg) {
   }
 
   [...map.entries()].sort((a, b) => b[1] - a[1])
-    .forEach(key => console.log(key[0] + ' -> ' + key[1] + ' times'))
+    .forEach(x => console.log(x[0] + ' -> ' + x[1] + ' times'))
 }
 
 //wordOccurrences(["Here", "is", "the", "first", "sentence", "Here", "is", "another", "sentence", "And", "finally", "the", "third", "sentence"])
