@@ -4,7 +4,7 @@ arg => Object.entries(arg.reduce((a, x) => (a[x] = (a[x] || 0) + 1, a), {}))
 
 //--------------------------------------------------------------//reduce
 
-arr => Object.entries(arr.reduce((acc, x) => (!acc[x] ? acc[x] = 1 : acc[x]++, acc), {}))
+arg => Object.entries(arg.reduce((a, x) => (a[x] ? a[x]++ : a[x] = 1, a), {}))
   .sort((a, b) => b[1] - a[1])
   .forEach(x => console.log(x[0], '->', x[1], 'times'))
 
