@@ -10,7 +10,7 @@ function wordOccurrences(arg) {
   while (arg.length) {
     let word = arg.shift()
     if (!map.has(word)) map.set(word, 1)
-    else   map.set(word, map.get(word) + 1)
+    else map.set(word, map.get(word) + 1)
   }
 
   [...map.entries()].sort((a, b) => b[1] - a[1])
