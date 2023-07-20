@@ -15,7 +15,7 @@ function deserializeString(arr) {
     let [char, index] = token.split(':')
     index = index.split('/')
     for (const i of index) {
-      resultArr[+i] = char
+      resultArr[i] = char
     }
   }
 
