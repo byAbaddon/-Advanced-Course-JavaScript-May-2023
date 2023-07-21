@@ -4,7 +4,6 @@ arr => arr.slice(0, -1).reduce((acc, x) => {
   return acc
 },[]).join('')
 
-
 //-----------------------------(2)-----------------
 
 function deserializeString(arr) {
